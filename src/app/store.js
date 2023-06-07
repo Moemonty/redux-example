@@ -6,3 +6,13 @@ export const store = configureStore({
     counter: counterReducer,
   },
 });
+
+// custom function to iterate through object
+function showValues(store) {
+  for (const property in store) {
+    console.log(store[property]);
+  }
+}
+
+// Let's examine the store
+showValues(store.getState());

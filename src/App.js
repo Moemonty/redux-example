@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h2>Redux Component</h2>
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
         <p>
