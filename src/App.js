@@ -1,14 +1,17 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
+import Simple from './Simple'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Simple />
         <h2>Redux Component</h2>
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <Counter />
         <p>
           Edit <code>src/App.js</code> and save to reload.

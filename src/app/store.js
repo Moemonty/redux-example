@@ -1,18 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit';
 import counterReducer from '../features/counter/counterSlice';
+import nameReducer from '../features/name/nameSlice'
+import { logObjValues } from './helpers/log';
 
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
+    name: nameReducer,
   },
 });
 
-// custom function to iterate through object
-function showValues(store) {
-  for (const property in store) {
-    console.log(store[property]);
-  }
-}
-
 // Let's examine the store
-showValues(store.getState());
+logObjValues(store.getState());

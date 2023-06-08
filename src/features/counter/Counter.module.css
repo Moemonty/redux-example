@@ -21,6 +21,8 @@
 }
 
 .button {
+  display: block;
+  margin: 10px auto;
   appearance: none;
   background: none;
   font-size: 32px;
